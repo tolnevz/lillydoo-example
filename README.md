@@ -1,6 +1,9 @@
 # lillydoo
 
-## Project setup
+## Demo
+Demo page [here](https://eager-lalande-974fc1.netlify.com/).
+
+### Project setup
 ```
 npm install
 ```
@@ -19,6 +22,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
