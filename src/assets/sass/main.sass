@@ -1,0 +1,186 @@
+// Google Font Montserrat
+@import url('https://fonts.googleapis.com/css?family=Spartan:300,400,500,600&display=swap')
+
+// Font Awesome
+@import "./fontawesome/fontawesome.scss"
+@import "./fontawesome/regular.scss"
+@import "./fontawesome/solid.scss"
+
+// Variables
+$text-color: #000
+$link-color: #00afab
+$hover-text: #fff
+$bg-color: #00afab
+$bg-color-dark: rgba(0, 175, 171, .5)
+$border-color: #00afab
+$icon-color: #a8b8c8
+$gray: #7c7c7c
+$star-color: #0b918e
+
+$font-family: 'Spartan', sans-serif
+
+h1, h2, h3, h4, h5
+  font-weight: 400
+  margin-bottom: 10px
+
+a
+  color: $link-color
+  text-decoration: none
+
+p
+  font-weight: 500
+  line-height: 1.9em
+  font-size: .85em
+
+ul
+  font-weight: 400
+  line-height: 1.5em
+  font-size: .85em
+  padding-left: 20px
+
+.primary-color
+  color: $bg-color
+
+.dark
+  background: $bg-color-dark
+  padding: 20px 0px
+
+.text-upper
+  text-transform: uppercase
+
+.text-center
+  text-align: center
+
+body
+  margin: 0
+  padding: 0
+
+.btn
+  background: $bg-color
+  border: none
+  color: $hover-text
+  padding: 10px 20px
+  font-size: 1em
+  cursor: pointer
+  transition: all .3s
+  margin: 20px 0px
+
+  &:hover
+    background: rgba(0, 175, 171, 0.7)
+
+.btn-block
+  width: 100%
+
+#app 
+  font-family: $font-family
+  color: $text-color
+
+.content
+  max-width: 80rem
+  margin: 40px auto
+
+// Hero Styles
+.hero
+  background-image: url('../images/header-trialbox.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  height: 450px
+  background-size: cover
+
+// Hero Styles
+.footer
+  background-image: url('../images/footer-bg.png')
+  background-position: bottom
+  height: 350px
+  background-repeat: repeat-x
+
+.line
+  background-color: $bg-color
+  height: 30px
+
+// Composition Styles
+.wrapper-2fr
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  grid-gap: 20px
+
+  .composition-item
+    display: grid
+    grid-template-columns: 1fr 2fr
+    grid-gap: 20px
+
+    .composition-image
+
+      img
+        width: 100%
+
+    .composition-content
+
+      h4
+        font-weight: 500
+
+      .stars
+        font-size: 1.2em
+        color: $star-color
+
+        i
+          margin-right: 5px
+          cursor: pointer
+
+      .star-count
+        font-size: .85em
+        color: $text-color
+        margin-left: 5px
+
+// Tabs Styles
+.tab-wrapper
+  display: grid
+  grid-template-columns: 1.2fr 1fr
+  grid-gap: 60px
+  padding-left: 20px
+  padding-right: 20px
+
+  .tab-content
+
+    img
+      width: 100%
+
+  .tab-nav
+
+    p
+      margin-bottom: 10px
+      margin-top: 0
+
+    .btns-wrapper
+      list-style: none
+      padding: 0
+      margin: 0
+      display: flex
+      justify-content: space-between
+      margin-bottom: 30px
+
+      .tab-btn
+        border: 1px solid $gray
+        color: $gray
+        width: 25%
+        text-align: center
+        padding: 10px 00px 5px 0px
+        margin-right: 10px
+        cursor: pointer
+        transition: all .2s
+
+        &:hover, &.active
+          background: $bg-color
+          border: 1px solid $border-color
+          color: $hover-text
+
+        p, span
+          margin: 0
+          padding: 0
+          font-size: 1em
+          line-height: 1em
+
+        span
+          font-size: .7em
+
+@import 'media'

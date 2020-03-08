@@ -1,0 +1,72 @@
+@media screen and (max-width: 991px)
+  .hero
+    height: 250px
+    background-size: cover
+
+  .tab-wrapper
+    grid-template-columns: 1fr
+    grid-gap: 10px
+
+  .tab-content
+    text-align: center
+
+    img
+      max-width: 70%
+
+  // Composition Styles
+  .wrapper-2fr
+    grid-template-columns: 1fr
+    margin: 0px 20px
+
+    .composition-item
+      grid-template-columns: .4fr 1fr
+      grid-gap: 10px
+
+      .composition-image
+
+        img
+          width: 100%
+
+@media screen and (max-width: 767px)
+  .tab-wrapper
+    .tab-content
+      text-align: center
+      
+      img
+        max-width: 90%
+  
+    .tab-nav
+      
+      .btns-wrapper
+        flex-wrap: wrap
+        justify-content: center
+        
+        .tab-btn
+          width: 80px
+          margin-bottom: 10px
+  
+
+@media screen and (max-width: 510px)
+  .tab-content
+    text-align: center
+    
+    img
+      max-width: 100%
+
+  // Composition Styles
+  .wrapper-2fr
+    grid-template-columns: 1fr
+    margin: 0px 20px
+
+    .composition-item
+      grid-template-columns: 1fr
+      grid-gap: 10px
+
+      .composition-image
+        text-align: center
+
+        img
+          width: 50%
+      .composition-content
+        h4, .stars
+          text-align: center
